@@ -18,7 +18,7 @@ int search(int array[], int n, int key) {
 int main() {
     int array[] = {2, 4, 0, 1, 9};
     int key = 1;
-    int n = sizeof(array)/sizeof(array[0]);
+    int n = sizeof(array)/sizeof(array[0]); // menentukan ukuran array menggunakan fungsi sizeof
 
     return 0;
 }
