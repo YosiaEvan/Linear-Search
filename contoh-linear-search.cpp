@@ -17,8 +17,12 @@ int search(int array[], int n, int key) {
 
 int main() {
     int array[] = {2, 4, 0, 1, 9};
-    int key = 1;
+    int find = 1;
     int n = sizeof(array)/sizeof(array[0]); // menentukan ukuran array menggunakan fungsi sizeof
+
+    int hasil = search(array, n, find);
+
+    (hasil == -1) ? cout << "Elemen tidak ditemukan dalam array." : cout << "Elemen ditemukan pada index ke-" << hasil;
 
     return 0;
 }
