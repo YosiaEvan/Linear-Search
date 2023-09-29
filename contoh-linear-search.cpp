@@ -13,7 +13,8 @@ int search(int array[], int n, int key) {
             return i; // mengembalikan nilai index
         }
     }
-};
+    return -1;
+}
 
 int main() {
     int array[] = {2, 4, 0, 1, 9};
