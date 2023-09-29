@@ -13,7 +13,7 @@ int search(int array[], int n, int key) {
             return i; // mengembalikan nilai index
         }
     }
-}
+};
 
 int main() {
     int array[] = {2, 4, 0, 1, 9};
@@ -22,6 +22,8 @@ int main() {
 
     int hasil = search(array, n, find);
 
+    // operator ternary
+    // (expresion) ? value if expresion is true : value if expresion is false
     (hasil == -1) ? cout << "Elemen tidak ditemukan dalam array." : cout << "Elemen ditemukan pada index ke-" << hasil;
 
     return 0;
