@@ -22,6 +22,15 @@ int search(int array[], int key, int low, int high) {
 
 int main() {
     int array[] = {3, 4, 5, 6, 7, 8, 9};
+    int find = 4;
+    int n = sizeof(array)/sizeof(array[0]);
+    int hasil = search(array, find, 0, n-1);
+
+    if(hasil == -1) {
+        cout << "Elemen tidak ditemukan dalam array";
+    } else {
+        cout << "Elemen ditemukan pada index ke-" << hasil;
+    }
 
     return 0;
 }
