@@ -14,7 +14,8 @@ int main() {
     mahasiswa mhs[8] = {{19006,"Matthew",3.15},{19004,"Brad",2.94},{19003,"Anthony",2.78},{19007,"Gillian",3.37},{19005,"Susan",2.93},{19001,"Miya",3.01},{19008,"Alice",3.56},{19002,"Raif",3.44}};
 
     // Deklarasi variabel search
-    int search, index = 0;
+    int search, index;
+    bool searching = false;
 
     // Menampilkan informasi data mahasiswa
     cout << "NIM\tNama\tIPK" << endl;
@@ -30,12 +31,13 @@ int main() {
     for(int i = 0; i < 8; i++) {
         if (mhs[i].nim == search) {
             index = i;
+            searching = true
             break;
         }
     }
 
     // Menampilkan data yang dicari
-    if(index == 1) {
+    if(searching != false) {
         cout << endl << "Data ditemukan:" << endl;
         cout << "NIM\t: " << mhs[index].nim << endl;
         cout << "Nama\t: " << mhs[index].nama << endl;
