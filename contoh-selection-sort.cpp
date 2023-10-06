@@ -38,5 +38,14 @@ int main() {
     // Mencari ukuran array
     int size = sizeof(array)/sizeof(array[0]);
 
+    // Display array sebelum diurutkan
+    cout << "Isi array sebelum diurutkan:" << endl;
+    display(array, size);
+    // Urutkan array dengan memanggil fungsi selection sort
+    selectionSort(array, size);
+    // Display array setelah diurutkan
+    cout << "Isi array setelah diurutkan:" << endl;
+    display(array, size);
+
     return 0;
 }
