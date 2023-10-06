@@ -33,6 +33,10 @@ void selectionSort (int array[], int size) {
 }
 
 int main() {
+    // Deklarasi array dengan 5 elemen
+    int array[] = {20, 12, 18, 15, 2};
+    // Mencari ukuran array
+    int size = sizeof(array)/sizeof(array[0]);
 
     return 0;
 }
