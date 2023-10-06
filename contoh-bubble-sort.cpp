@@ -26,5 +26,11 @@ int main() {
         }
     }
 
+    // Menampilkan elemen setelah pengurutan
+    cout << endl << "Elemen setelah diurutkan:" << endl;
+    for (int i = 0; i < 6; i++) {
+        cout << array[i] << "\t";
+    }
+
     return 0;
 }
