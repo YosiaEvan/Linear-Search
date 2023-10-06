@@ -16,7 +16,7 @@ int main() {
     // Menampilkan informasi data mahasiswa
     cout << "NIM    Nama    IPK" << endl;
     for (int i = 0; i < 8; i++) {
-        cout << "NIM    : " << mhs[i].nim << "\t" << mhs[i].nama << "\t" << mhs[i].ipk << endl;
+        cout << mhs[i].nim << "\t" << mhs[i].nama << "\t" << mhs[i].ipk << endl;
     }
 
     return 0;
