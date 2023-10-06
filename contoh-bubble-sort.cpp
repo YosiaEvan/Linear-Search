@@ -18,7 +18,7 @@ int main() {
         // Pair-wise comparison process
         for(int j = i+1; j < 6; j++) {
             // Compare and swap
-            if (array[j] > array[i]) {
+            if (array[j] < array[i]) { // "<" untuk ascending dan ">" untuk descending
                 int temp = array[i]; // Temporary variable
                 array[i] = array[j];
                 array[j] = temp;
