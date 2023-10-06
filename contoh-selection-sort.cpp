@@ -44,7 +44,7 @@ int main() {
     // Urutkan array dengan memanggil fungsi selection sort
     selectionSort(array, size);
     // Display array setelah diurutkan
-    cout << "Isi array setelah diurutkan:" << endl;
+    cout << endl << "Isi array setelah diurutkan:" << endl;
     display(array, size);
 
     return 0;
