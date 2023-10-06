@@ -22,6 +22,10 @@ int main() {
         cout << mhs[i].nim << "\t" << mhs[i].nama << "\t" << mhs[i].ipk << endl;
     }
 
+    // Input NIM yang akan dicari
+    cout << endl << "Input NIM mahasiswa yang dicari: ";
+    cin >> search;
+
     // Linear Searching
     for(int i = 0; i < 8; i++) {
         if (mhs[i].nim == search) {
@@ -32,7 +36,7 @@ int main() {
 
     // Menampilkan data yang dicari
     if(index == 1) {
-        cout << "Data ditemukan:" << endl;
+        cout << endl << "Data ditemukan:" << endl;
         cout << "NIM\t: " << mhs[index].nim << endl;
         cout << "Nama\t: " << mhs[index].nama << endl;
         cout << "IPK\t: " << mhs[index].ipk << endl;
