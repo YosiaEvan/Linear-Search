@@ -10,6 +10,13 @@ void display(int array[], int size) {
     }
 }
 
+// Fungsi swapping
+void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
 int main() {
 
     return 0;
