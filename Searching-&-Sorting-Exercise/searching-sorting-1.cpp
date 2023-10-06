@@ -31,7 +31,7 @@ int main() {
     for(int i = 0; i < 8; i++) {
         if (mhs[i].nim == search) {
             index = i;
-            searching = true
+            searching = true;
             break;
         }
     }
