@@ -13,7 +13,18 @@ int main() {
         cout << array[i] << "\t";
     }
 
-    
+    // Proses pengurutan
+    for (int i = 0; i < 6; i++) {
+        // Pair-wise comparison process
+        for(int j = i+1; j < 6; j++) {
+            // Compare and swap
+            if (array[j] > array[i]) {
+                int temp = array[i]; // Temporary variable
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
 
     return 0;
 }
