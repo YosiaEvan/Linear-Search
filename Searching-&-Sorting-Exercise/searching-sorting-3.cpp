@@ -27,7 +27,7 @@ int main() {
     }
 
     // Menampilkan isi array setelah diurutkan
-    cout << "Elemen sebelum diurutkan:" << endl;
+    cout << "\nElemen setelah diurutkan:" << endl;
     for(int i = 0; i < size; i++) {
         cout << array[i] << "\t";
     }
