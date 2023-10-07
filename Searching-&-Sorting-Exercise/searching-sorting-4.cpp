@@ -14,8 +14,7 @@ int main() {
 
     // Proses pengurutan
     for (int i = 0; i < 10; i++) {
-        max = 10 - i - 1;
-        for(int j = i+1; j < max; j++) {
+        for(int j = i+1; j < 10-i; j++) {
             if (array[j] < array[i]) { // "<" untuk ascending dan ">" untuk descending
                 int temp = array[i];
                 array[i] = array[j];
