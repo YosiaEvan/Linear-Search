@@ -1,4 +1,10 @@
-// Program Bead Sort
+/*
+    #2 Program Bead Sort
+    Anggota Kelompok:
+    - Yosia Evan (2281020)
+    - Deca Caren (2281009)
+    - Green Melissa (2281065)
+*/
 
 #include <iostream>
 using namespace std;

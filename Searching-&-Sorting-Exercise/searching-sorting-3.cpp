@@ -1,4 +1,10 @@
-// Program Insertion Sort
+/*
+    #3 Program Insertion Sort
+    Anggota Kelompok:
+    - Yosia Evan (2281020)
+    - Deca Caren (2281009)
+    - Green Melissa (2281065)
+*/
 
 #include <iostream>
 using namespace std;

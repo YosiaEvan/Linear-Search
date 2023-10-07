@@ -1,3 +1,11 @@
+/*
+    #1 Program Searching & Sorting (Linear Search)
+    Anggota Kelompok:
+    - Yosia Evan (2281020)
+    - Deca Caren (2281009)
+    - Green Melissa (2281065)
+*/
+
 #include <iostream>
 using namespace std;
 
