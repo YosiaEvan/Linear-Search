@@ -18,8 +18,8 @@ int main() {
             if (array[j] < array[i]) { // "<" untuk ascending dan ">" untuk descending
                 high = i;
             }
-            int temp = array[i];
-            array[i] = array[j];
+            int temp = array[high];
+            array[high] = array[j];
             array[j] = temp;
         }
     }
