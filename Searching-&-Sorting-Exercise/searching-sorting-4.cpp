@@ -13,22 +13,26 @@ int main() {
     }
 
     // Proses pengurutan
-    for (int i = 0; i < 10-1; i++) {
+    for(int i = 0; i < 10-1; i++) {
         max = 10 - i - 1;
-        cout << "Pass ke-" << i << endl;
+        cout << endl << "Pass ke-" << i+1 << ": " << endl;
         for(int j = 0; j < max; j++) {
-            if (array[j] > array[j+1]) { // "<" untuk ascending dan ">" untuk descending
+            if(array[j] > array[j+1]) {
                 int temp = array[j];
                 array[j] = array[j+1];
                 array[j+1] = temp;
             }
-            cout << "Perbandingan ke-" << j << array[j] << "\t" << endl;
+            cout << "Perbandingan ke-" << j+1 << ": ";
+            for(int k = 0; k < 10; k++) {
+                cout << array[k] << "\t";
+            }
+            cout << endl;
         }
     }
 
     // Menampilkan elemen setelah pengurutan
     cout << endl << "Elemen setelah diurutkan:" << endl;
-    for (int i = 0; i < 10; i++) {
+    for(int i = 0; i < 10; i++) {
         cout << array[i] << "\t";
     }
 
