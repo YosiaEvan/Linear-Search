@@ -14,6 +14,8 @@ int main() {
     for(int i = 0; i < size; i++) {
         cout << array[i] << "\t";
     }
+    cout << endl;
+    cout << endl;
 
     // Proses insertion sort
     for(int i = 1; i < size; i++) {
