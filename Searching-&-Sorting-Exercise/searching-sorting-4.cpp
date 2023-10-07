@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     // Deklarasi array dengan 10 elemen
     int array[] = {77, 42, 35, 12, 101, 5, 17, 1, 8, 90};
-    int high;
+    int max;
 
     // Menampilkan isi array sebelum diurutkan
     cout << "Elemen sebelum diurutkan:" << endl;
@@ -13,14 +13,14 @@ int main() {
     }
 
     // Proses pengurutan
-    for (int i = 0; i < 10; i++) {
-        for(int j = i+1; j < 10-i; j++) {
-            if (array[j] < array[i]) { // "<" untuk ascending dan ">" untuk descending
-                high = i;
+    for (int i = 0; i < 10-1; i++) {
+        max = 10 - i - 1;
+        for(int j = 0; j < max; j++) {
+            if (array[j] > array[j+1]) { // "<" untuk ascending dan ">" untuk descending
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
             }
-            int temp = array[high];
-            array[high] = array[j];
-            array[j] = temp;
         }
     }
 
