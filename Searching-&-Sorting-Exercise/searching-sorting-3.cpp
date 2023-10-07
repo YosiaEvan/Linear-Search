@@ -1,3 +1,5 @@
+// Program Insertion Sort
+
 #include <iostream>
 using namespace std;
 
@@ -9,8 +11,19 @@ int main() {
 
     // Menampilkan isi array sebelum diurutkan
     cout << "Elemen sebelum diurutkan:" << endl;
-    for (int i = 0; i < size; i++) {
+    for(int i = 0; i < size; i++) {
         cout << array[i] << "\t";
+    }
+
+    // Proses insertion sort
+    for(int i = 1; i < size; i++) {
+        for(j = i; j > 0; j--) {
+            if(array[i] < array[i-1]) {
+                int temp = array[i];
+                array[i] = array[i-1];
+                array[i-1] = temp;
+            }
+        }
     }
 
     return 0;

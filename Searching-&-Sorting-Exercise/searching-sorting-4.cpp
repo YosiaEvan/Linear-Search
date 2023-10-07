@@ -11,7 +11,7 @@ int main() {
 
     // Menampilkan isi array sebelum diurutkan
     cout << "Elemen sebelum diurutkan:" << endl;
-    for (int i = 0; i < size; i++) {
+    for(int i = 0; i < size; i++) {
         cout << array[i] << "\t";
     }
 
