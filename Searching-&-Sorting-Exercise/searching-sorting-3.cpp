@@ -17,12 +17,17 @@ int main() {
 
     // Proses insertion sort
     for(int i = 1; i < size; i++) {
+        cout << "Perulangan ke-" << i << ": " << endl;
         for(int j = i; j > 0; j--) {
-            if(array[i] < array[i-1]) {
-                int temp = array[i];
-                array[i] = array[i-1];
-                array[i-1] = temp;
+            if(array[j] < array[j-1]) {
+                int temp = array[j];
+                array[j] = array[j-1];
+                array[j-1] = temp;
             }
+            for(int k = 0; k < size; k++) {
+                cout << array[k] << "\t";
+            }
+            cout << endl;
         }
     }
 
