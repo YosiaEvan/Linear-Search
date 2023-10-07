@@ -15,12 +15,14 @@ int main() {
     // Proses pengurutan
     for (int i = 0; i < 10-1; i++) {
         max = 10 - i - 1;
+        cout << "Pass ke-" << i << endl;
         for(int j = 0; j < max; j++) {
             if (array[j] > array[j+1]) { // "<" untuk ascending dan ">" untuk descending
                 int temp = array[j];
                 array[j] = array[j+1];
                 array[j+1] = temp;
             }
+            cout << "Perbandingan ke-" << j << array[j] << "\t" << endl;
         }
     }
 
