@@ -17,9 +17,9 @@ int main() {
         max = 10 - i - 1;
         for(int j = 0; j < max; j++) {
             if (array[j] > array[j+1]) { // "<" untuk ascending dan ">" untuk descending
-                int temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
+                int temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
             }
         }
     }
