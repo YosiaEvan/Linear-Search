@@ -17,7 +17,7 @@ int main() {
 
     // Proses insertion sort
     for(int i = 1; i < size; i++) {
-        for(j = i; j > 0; j--) {
+        for(int j = i; j > 0; j--) {
             if(array[i] < array[i-1]) {
                 int temp = array[i];
                 array[i] = array[i-1];
