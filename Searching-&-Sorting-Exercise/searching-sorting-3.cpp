@@ -25,6 +25,8 @@ int main() {
                 int temp = array[j];
                 array[j] = array[j-1];
                 array[j-1] = temp;
+            } else {
+                break;
             }
             for(int k = 0; k < size; k++) {
                 cout << array[k] << "\t";
