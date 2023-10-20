@@ -64,7 +64,7 @@ void display() {
         cout << "Stack kosong." << endl;
         return;
     } else {
-        for(int i = top; i >= 0; i++) {
+        for(int i = top; i >= 0; i--) {
             cout << endl << stack[i];
         }
         cout << endl;
@@ -106,6 +106,7 @@ int main() {
                 cout << "Pilihan yang anda masukkan salah." << endl;
         }
     } while(pilihan != 5);
+    cout << "Elmen terakhir dalam stack secara aktual : " << stack[max-1] << endl;
 
     return 0;
 }
