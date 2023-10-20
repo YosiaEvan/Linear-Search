@@ -106,7 +106,7 @@ int main() {
                 cout << "Pilihan yang anda masukkan salah." << endl;
         }
     } while(pilihan != 5);
-    cout << "Elmen terakhir dalam stack secara aktual : " << stack[max-1] << endl;
+    cout << "Eelmen terakhir dalam stack secara aktual : " << stack[max-1] << endl;
 
     return 0;
 }
