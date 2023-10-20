@@ -44,3 +44,16 @@ void push(int x) {
         cout << x << " sudah berhasil ditambahkan ke dalam stack." << endl;
     }
 }
+
+// Fungsi untuk mengeluarkan elemen dari stack
+void pop() {
+    if(isEmpty()) {
+        cout << "Stack kosong. Tidak ada elemen yang dapat dikeluarkan." << endl;
+        return;
+    } else {
+        int temp; // Variabel temporar untuk menyimpan nilai yang akan dikeluarkan
+        temp = stack[top];
+        top = top - 1; // Atau top--; atau top -= 1;
+        cout << temp << " sudah dikeluarkan dari stack." << endl;
+    }
+}
