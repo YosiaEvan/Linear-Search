@@ -27,3 +27,8 @@ bool isFull() {
         return false;
     }
 }
+
+// Fungsi untuk mengambil nilai elemen teratas dalam stack
+int totOfStack() {
+    return stack[top];
+}
