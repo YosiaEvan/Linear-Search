@@ -32,3 +32,15 @@ bool isFull() {
 int totOfStack() {
     return stack[top];
 }
+
+// Fungsi untuk menambahkan elemen ke dalam stack
+void push(int x) {
+    if(isFull()) {
+        cout << "Stack penuh. Tidak dapat menambahkan elemen." << endl;
+        return;
+    } else {
+        top++; // Atau top = top+1 atau top += 1
+        stack[top] = x;
+        cout << x << " sudah berhasil ditambahkan ke dalam stack." << endl;
+    }
+}
