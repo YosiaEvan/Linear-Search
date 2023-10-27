@@ -91,7 +91,7 @@ int main() {
                 pop();
                 break;
             default:
-                cout << "Pilihan yang anda masukkan salah." << endl;
+                cout << "The option you entered is incorrect." << endl;
         }
     } while(pilihan != 4);
 

@@ -61,13 +61,12 @@ void displayReverse() {
         return;
     } else {
         int temp[max];
-        // temp[0] = stack[top];
-        // temp[1] = stack[top-1];
-        // temp[2] = stack[top-2];
-        // temp[3] = stack[top-3];
-        for (int i = 0; i <= top; i++) {
+        for(int i = 0; i <= top; i++) {
             temp[i] = stack[top-i];
-            cout << temp[i] << " ";
+        }
+        for(int i = top; i >= 0; i--) {
+            stack[i] = temp[i];
+            cout << stack[i] << " ";
         }
         cout << endl;
     }
@@ -103,7 +102,7 @@ int main() {
                 displayReverse();
                 break;
             default:
-                cout << "Pilihan yang anda masukkan salah." << endl;
+                cout << "The option you entered is incorrect." << endl;
         }
     } while (pilihan != 5);
 
