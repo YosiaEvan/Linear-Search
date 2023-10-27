@@ -48,6 +48,7 @@ void display() {
         cout << "Stack empty." << endl;
         return;
     } else {
+        cout << "Stack elements: ";
         for (int i = top; i >= 0; i--) {
             cout << stack[i] << " ";
         }
@@ -61,6 +62,7 @@ void displayReverse() {
         return;
     } else {
         int temp[max];
+        cout << "Stack elements: ";
         for(int i = 0; i <= top; i++) {
             temp[i] = stack[top-i];
         }
@@ -73,38 +75,27 @@ void displayReverse() {
 }
 
 int main() {
-    int num;
-    int pilihan;
+    cout << "Input some elements onto the stack:" << endl;
+    push(7);
+    push(4);
+    push(2);
+    push(5);
+    push(1);
+    push(0);
+    display();
+    cout << "Display the reverse elements of the stack:" << endl;
+    displayReverse();
+    cout << "Remove two elements:" << endl;
+    pop();
+    pop();
+    display();
+    cout << "Input two more elements" << endl;
+    push(-1);
+    push(10);
+    display();
+    cout << "Display the reverse elements of the stack:" << endl;
+    displayReverse();
 
-    do {
-        cout << "===== Menu Stack =====" << endl;
-        cout << "1. Display" << endl
-             << "2. Push" << endl
-             << "3. Pop" << endl
-             << "4. Display Reverse" << endl
-             << "5. Exit" << endl;
-        cout << "Enter your choice: ";
-        cin >> pilihan;
-
-        switch (pilihan) {
-            case 1:
-                display();
-                break;
-            case 2:
-                cout << "Input some elements onto the stack: ";
-                cin >> num;
-                push(num);
-                break;
-            case 3:
-                pop();
-                break;
-            case 4:
-                displayReverse();
-                break;
-            default:
-                cout << "The option you entered is incorrect." << endl;
-        }
-    } while (pilihan != 5);
 
     return 0;
 }

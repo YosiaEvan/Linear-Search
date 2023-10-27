@@ -87,10 +87,6 @@ void findAndRemove() {
 }
 
 int main() {
-    int num;
-    int pilihan;
-    int elemenTop;
-
     cout << "Input some elements onto the stack:" << endl;
     push(7);
     push(4);
@@ -105,37 +101,6 @@ int main() {
     display();
     findAndRemove();
     display();
-
-
-    // do {
-    //     cout << "===== Menu Stack =====" << endl;
-    //     cout << "1. Display" << endl
-    //          << "2. Push" << endl 
-    //          << "3. Pop" << endl  
-    //          << "4. Find and Remove Largest Element" << endl
-    //          << "5. Exit" << endl;
-    //     cout << "Enter your choice: ";
-    //     cin >> pilihan;
-
-    //     switch(pilihan) {
-    //         case 1:
-    //             display();
-    //             break;
-    //         case 2:
-    //             cout << "Input some elements onto the stack: ";
-    //             cin >> num;
-    //             push(num);
-    //             break;
-    //         case 3:
-    //             pop();
-    //             break;
-    //         case 4:
-    //             findAndRemove();
-    //             break;
-    //         default:
-    //             cout << "The option you entered is incorrect." << endl;
-    //     }
-    // } while(pilihan != 5);
 
     return 0;
 }
