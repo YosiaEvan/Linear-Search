@@ -2,5 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons"
 }
